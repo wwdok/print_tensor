@@ -1,3 +1,4 @@
 build/
 dist/
-print_tensor.egg-info/
+printensor.egg-info/
+print_tensor/__pycache__

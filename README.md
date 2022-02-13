@@ -3,10 +3,21 @@ This package's main propose is to uppack those tensors inside list, tuple, dict,
 Currently it only support print the tensor shape of pytorch and numpy. If you are using other deep learning framework, you can go the source code, and modify it locally to fit your needs.
 
 # Usage
+
+1. install
+```
+pip install printensor
+```
+1. import
+```
+(Due to some reason, the installed package name is not same with imported package name, but it is OK.)
+from print_tensor import print_shape as prints
+```
+2. example
 ```python
 import torch
 import numpy as np
-from print_tensor import print_shape as prints  # import package's function
+from print_tensor import print_shape as prints
 
 a = torch.tensor([1,2,3])  # single tensor
 b = [torch.rand(2,3) for i in range(5)]  # list of tensor

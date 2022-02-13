@@ -1,1 +1,1 @@
-from print_tensor import print_shape
+from .print_tensor import *

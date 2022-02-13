@@ -2,10 +2,11 @@ from setuptools import setup, find_packages
 
 if __name__ == "__main__":
     setup(
-        name="print_tensor",
-        version="0.0.1",
-        description="Print shape of  pytorch tensor inside list, tuple, dict, generator",
+        name="printensor",
+        version="0.0.2",
+        description="Print shape of pytorch tensor inside list, tuple, dict, generator",
         long_description=open("README.md", "r").read(),
+        long_description_content_type="text/markdown",
         url="https://github.com/wwdok/print_tensor",
         author="Weida Wang",
         author_email="wade.wang96@outlook.com",
@@ -14,7 +15,7 @@ if __name__ == "__main__":
         packages=find_packages(),
         install_requires=[],
         classifiers=[
-            "Development Status :: Beta",
+            "Development Status :: 3 - Alpha",
             "License :: OSI Approved :: MIT License",
             "Operating System :: OS Independent",
             "Programming Language :: Python :: 3.5",
