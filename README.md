@@ -8,12 +8,12 @@ Currently it only support print the tensor shape of pytorch and numpy. If you ar
 ```
 pip install printensor
 ```
-1. import
+2. import
 ```
 (Due to some reason, the installed package name is not same with imported package name, but it is OK.)
 from print_tensor import print_shape as prints
 ```
-2. example
+3. example
 ```python
 import torch
 import numpy as np
