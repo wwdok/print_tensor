@@ -2,9 +2,17 @@ import torch
 import numpy as np
 from typing import Generator
 
-def print_shape(dataname, data):
+def print_shape(data, dataname=None):
     prefix = "==>> "  # you can change this prefix to your preference
-    dataname = dataname[::-1].replace(":", "", 1)  #  reverse string and remove last ":"
+    if dataname is None:
+        dataname = ""
+    else:
+        # remove original prefix with space and remove origianl attribute with dot
+        if  '.' in dataname:
+            dataname = dataname.split(".")[0]
+            if ' ' in dataname:
+                dataname = dataname.split(" ")[-1]
+            
     if type(data) == torch.Tensor or type(data) == np.ndarray:
         if data.shape in [torch.Size([]), torch.Size([1]), (), (1,)]:
             # if the tensor only has one value, directly print it out.

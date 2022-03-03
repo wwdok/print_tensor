@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 if __name__ == "__main__":
     setup(
         name="printensor",
-        version="0.0.2",
+        version="0.0.4",
         description="Print shape of pytorch tensor inside list, tuple, dict, generator",
         long_description=open("README.md", "r").read(),
         long_description_content_type="text/markdown",
