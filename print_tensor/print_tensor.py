@@ -9,13 +9,17 @@ def print_shape(*arg):
     elif len(arg) == 2:
         dataname = arg[0]
         data = arg[1]
-        # remove redundant string of original prefix
+        # remove attribute
         if  '.' in dataname:
             dataname = dataname.split(".")[0]
+        # remove prefix
         if ' ' in dataname:
             dataname = dataname.split(" ")[1]
+        # remove suffix
         if ':' in dataname:
             dataname = dataname.replace(":", "")
+        if '\n' in dataname:
+            dataname = dataname.replace("\n", "")
 
     prefix = "==>> "  # you can change this prefix to your preference
 
